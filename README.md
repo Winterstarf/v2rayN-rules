@@ -1,14 +1,14 @@
-## Rule Profiles
+## Routing rules
 
-Choose the configuration that best fits your traffic needs:
+There currently exists 3 routing "profiles":
 
 | Profile | Description
 | :--- | :--- 
-| **Blocked Only** | Proxies only known blocked domains and CIDR ranges
-| **Except Russia** | Proxies all traffic except for Russian domains and IP space
-| **Everything** | Routes all traffic through the proxy
+| **blocked** | Proxies only known blocked domains and CIDR ranges
+| **except_ru** | Proxies all traffic except for Russian domains and IP space
+| **everything** | Routes all traffic through the proxy
 
-### Subscription Links
+### Raw links
 * **blocked.json**: `https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/blocked.json`
 * **except_ru.json**: `https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/except_ru.json`
 * **everything.json**: `https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/everything.json`
@@ -17,7 +17,7 @@ Choose the configuration that best fits your traffic needs:
 
 ## v2rayN Guide
 
-### 1. Configure Geo-Asset Sources
+### 1. Configure Geo-Asset sources
 1. Open **Settings** > **Option Setting** > **v2rayN settings**.
 2. Locate the **Geo files source** dropdown.
 3. Select the `runetfreedom/russia-v2ray-rules-dat` option.
@@ -25,7 +25,7 @@ Choose the configuration that best fits your traffic needs:
 
 ![Step 1: Geo Asset Configuration](https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/images/geofiles_setting.png)
 
-### 2. Import Routing Rules
+### 2. Import rules
 1. Navigate to **Settings** > **Routing Setting**.
 2. Click the **Add** button.
 3. Enter a custom name in the **Remark** field (e.g., "RU-Bypass").
@@ -35,7 +35,7 @@ Choose the configuration that best fits your traffic needs:
 
 ![Step 2: Rule Import Process](https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/images/importing_rules.png)
 
-### 3. Activate the Profile
+### 3. Activate the routing profile
 1. On the main application window, locate the **Routing** dropdown at the bottom.
 2. Select the profile you just created.
 3. Enable **Tun Mode** or **System Proxy** depending on your specific requirements.
