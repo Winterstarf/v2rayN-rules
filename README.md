@@ -15,7 +15,7 @@ Choose the configuration that best fits your traffic needs:
 
 ---
 
-## Installation Guide
+## v2rayN Guide
 
 ### 1. Configure Geo-Asset Sources
 1. Open **Settings** > **Option Setting** > **v2rayN settings**.
