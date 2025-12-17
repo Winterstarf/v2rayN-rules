@@ -2,8 +2,8 @@
 
 Choose the configuration that best fits your traffic needs:
 
-| Profile | Description | Use Case |
-| :--- | :--- | :--- |
+| Profile | Description
+| :--- | :--- 
 | **Blocked Only** | Proxies only known blocked domains and CIDR ranges.
 | **Except Russia** | Proxies all traffic except for Russian domains and IP space.
 | **Everything** | Routes all traffic through the proxy.
