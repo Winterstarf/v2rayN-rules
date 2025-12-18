@@ -56,7 +56,6 @@ eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiMUJDRUI2MDgtODhERS00NTE4LTlD
 
 ![Step 3: Activating the Route](https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/images/using_profiles.png)
 
-
 ---
 
 ## v2RayTun guide
@@ -67,20 +66,16 @@ eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiMUJDRUI2MDgtODhERS00NTE4LTlD
 3. Locate **Geo files source** and select `runetfreedom/russia-v2ray-rules-dat` from the dropdown list.
 4. Tap the **Cloud icon** to start the download. Wait until the `.dat` files are fully updated.
 
-![Main Screen](https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/images/v2raytun_main.png)
+![Main Screen](https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/images/v2raytun_geo.png)
 
 ### 2. Set domain strategy
 1. In the **Routing** menu, find the **Domain Strategy** setting.
 2. Choose **IPIfNonMatch**. This ensures that if a domain doesn't match a rule immediately, the app will resolve the IP and check the rules again for a more accurate match.
+3. Copy the chosen Base64 code to your clipboard.
+4. In v2RayTun, tap the **three dots menu** (top right).
+5. Select **Import ruleset from clipboard**.
 
 ![Routing Menu](https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/images/v2raytun_routing.png)
-
-### 3. Import routing rulesets
-1. Copy the chosen Base64 code to your clipboard.
-2. In v2RayTun, tap the **three dots menu** (top right).
-3. Select **Import ruleset from clipboard**.
-
-![Geo Asset Menu](https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/images/v2raytun_geo.png)
 
 ---
 
