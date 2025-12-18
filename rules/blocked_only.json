@@ -24,7 +24,8 @@
     "port": "",
     "outboundTag": "proxy",
     "ip": [
-      "geoip:ru-blocked"
+      "geoip:ru-blocked",
+      "geoip:google"
     ],
     "enabled": true,
     "remarks": "Proxy blocked CIDR"
@@ -209,4 +210,5 @@
     "enabled": true,
     "remarks": "Direct else"
   }
+
 ]
