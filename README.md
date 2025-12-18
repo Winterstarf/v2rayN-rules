@@ -1,3 +1,9 @@
+# Important
+These rules are meant to be used with whatever XRay core-supported client you want. For desktop, I can recommend v2rayN, which is available on Linux, Win and macOS.
+As for mobile, v2RayTun is there on Android and iOS, though there are other options like V2Box and Happ (which I do not recommend, however, as they're pieces of ad-infested trash).
+
+If you want to use cores like Sing-Box or mihomo (Clash/Meta), there are converters to **.srs** and **.mrs** files available, though because of lack of support of some of the transport options on these cores I restrain from using them at this time
+
 ## Routing rules
 
 There currently exists 3 routing "profiles":
@@ -9,11 +15,11 @@ There currently exists 3 routing "profiles":
 | **everything** | Routes all traffic through the proxy
 
 ### Raw links for v2rayN
-* **blocked_only.json**: `https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/rules/blocked_only.json`
-* **except_ru.json**: `https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/rules/except_ru.json`
-* **everything.json**: `https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/rules/everything.json`
+* **blocked_only.json**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/blocked_only.json`
+* **except_ru.json**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/except_ru.json`
+* **everything.json**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/everything.json`
 
-### Base64 for v2RayTun
+### Base64 encoded rules for v2RayTun
 * **blocked_only**: 
 ```
 eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiOEI0RjU5NTYtNERBNC00ODMxLUIyMkUtNERDMDcxMjUyQzI3IiwiYmFsYW5jZXJzIjpbXSwiZG9tYWluTWF0Y2hlciI6Imh5YnJpZCIsIm5hbWUiOiJSdWxlc2V0IiwicnVsZXMiOlt7Il9fbmFtZV9fIjoiQmxvY2sgQWRzIiwiaWQiOiJDM0I0MzVGMi05QzcwLTQ3MTAtQTgzQy05RTEzNzcwNzFFRjYiLCJ0eXBlIjoiZmllbGQiLCJkb21haW4iOlsiZ2Vvc2l0ZTpjYXRlZ29yeS1hZHMtYWxsIl0sIm91dGJvdW5kVGFnIjoiYmxvY2sifSx7Il9fbmFtZV9fIjoiUHJveHkgRE5TIiwiaWQiOiJDRkU3QjQxRi1ERUIyLTRENkUtODIyQi04RjNDNjE1RjY5MDMiLCJ0eXBlIjoiZmllbGQiLCJpcCI6WyIxLjAuMC4xIiwiMS4xLjEuMSIsIjguOC44LjgiLCI4LjguNC40Il0sIm91dGJvdW5kVGFnIjoicHJveHkifSx7Il9fbmFtZV9fIjoiUHJveHkgYmxvY2tlZCBDSURSIiwiaWQiOiIyMzhDMzFFMC0wMUY1LTQ4NjUtOTE3Qy0yMTEzMkMyQTgzNUYiLCJ0eXBlIjoiZmllbGQiLCJpcCI6WyJnZW9pcDpydS1ibG9ja2VkIl0sIm91dGJvdW5kVGFnIjoicHJveHkifSx7Il9fbmFtZV9fIjoiUHJveHkgYmxvY2tlZCBkb21haW5zIiwiaWQiOiI0MDNDMTM4NC1DMTE4LTQ2OUItQUY1RS00MTIyQkI4MzgyM0QiLCJ0eXBlIjoiZmllbGQiLCJkb21haW4iOlsiZ2Vvc2l0ZTpydS1ibG9ja2VkIl0sIm91dGJvdW5kVGFnIjoicHJveHkifSx7Il9fbmFtZV9fIjoiUHJveHkgY3VzdG9tIGRvbWFpbnMiLCJpZCI6IjIzMEZGQ0I1LTIwRTEtNDZGMC04OUYzLUFBNDUzN0VEQUEwRiIsInR5cGUiOiJmaWVsZCIsImRvbWFpbiI6WyJhbGxhcmtub3cub25saW5lIiwiYW1lbXYuY29tIiwiYW5pbWVnby5vcmciLCJhbmltZW5pbWUucnUiLCJhdG9taWNzLndzIiwiYmFja2xvZ2dkLmNvbSIsImJ5dGVkYXBtLmNvbSIsImJ5dGVnZWNrby1pMThuLmNvbSIsImJ5dGVvdmVyc2VhLmNvbSIsImNvb21lci5wYXJ0eSIsImNvb21lci5zdSIsImRvdXlpbi1wb3J0YWwuY29tIiwiZG91eWluLmNvbSIsImRvdXlpbnNlYy5jb20iLCJkb3V5aW5zdGF0aWMuY29tIiwiZG91eWludm9kLmNvbSIsImV6Z2lmLmNvbSIsImZvdHBybzEzNWFsdG8uY29tIiwiaWJ5dGVkdG9zLmNvbSIsImlieXRlaW1nLmNvbSIsImllc2RvdXlpbi5jb20iLCJpZXNkb3V5aW5hcGkuY29tIiwiaXBzdGF0cC5jb20iLCJpc25zc2RrLmNvbSIsImp1dC5zdSIsImtlbW9uby5jciIsImtlbW9uby5wYXJ0eSIsImtlbW9uby5zdSIsImxlYWd1ZW9mbGVnZW5kcy5jb20iLCJsdW1leC5zcGFjZSIsIm1vZHJpbnRoLmNvbSIsIm1vZHVsYXJncmlkLm5ldCIsIm11bHQtZmFuLnR2IiwibXVzY2RuLmNvbSIsIm11c2ljYWwubHkiLCJvYnJ1dC5zaG93Iiwib3BlbnZwbi5uZXQiLCJwMTYtdGlrdG9rY2RuLWNvbS5ha2FtYWl6ZWQubmV0IiwicGxheXZhbG9yYW50LmNvbSIsInJldmVyYi5jb20iLCJyZXlvaG9oby5zcGFjZSIsInJpb3RnYW1lcy5jb20iLCJzZ3BzdGF0cC5jb20iLCJzbmQuc2MiLCJzbmRjZG4uY29tIiwic25zc2RrLmNvbSIsInNvbmljYmlkcy5jb20iLCJzb3VuZGNsb3VkLmNsb3VkIiwic291bmRjbG91ZC5jb20iLCJzb3ZldHJvbWFudGljYS5jb20iLCJzcG9uc29yLmFqYXkuYXBwIiwic3RlYW1oaXN0b3J5Lm5ldCIsInRpay10b2thcGkuY29tIiwidGlrdG9rLmNvbSIsInRpa3Rva2Nkbi1ldS5jb20iLCJ0aWt0b2tjZG4tdXMuY29tIiwidGlrdG9rY2RuLmNvbSIsInRpa3Rva2QubmV0IiwidGlrdG9rZC5vcmciLCJ0aWt0b2t2LmNvbSIsInRpa3Rva3YuZXUiLCJ0aWt0b2t2LnVzIiwidGlrdG9rdy5ldSIsInRpa3Rva3cudXMiLCJ0dGxpdmVjZG4uY29tIiwidHR3c3RhdGljLmNvbSIsInZpZGVvZnJhbWUyLmNvbSIsInlub3Byb2plY3QubmV0IiwieXVtZS53aWtpIl0sIm91dGJvdW5kVGFnIjoicHJveHkifSx7Il9fbmFtZV9fIjoiUHJveHkgRGlzY29yZCBDSURSICIsImlkIjoiMzlGMDA3NjYtNDczMy00RjY5LTlGOTAtNDI3Q0JBQTdBMkI4IiwidHlwZSI6ImZpZWxkIiwiaXAiOlsiMzQuMC4wLjAvMTYiLCIzNC4xLjIyNC4wLzE5IiwiMzUuMjA3LjAuMC8xNiIsIjM1LjIxMi4wLjAvMTQiLCIzNS4yMTcuMC4wLzE4IiwiMzUuMjE5LjIyNC4wLzE5IiwiNjYuMjIuMTkyLjAvMTgiXSwib3V0Ym91bmRUYWciOiJwcm94eSJ9LHsiX19uYW1lX18iOiJQcm94eSBUZWxlZ3JhbSBDSURSICIsImlkIjoiQzAwQjcwMEItOTYyQy00OTQ3LUI4MzItQjU5QjM0NzdBOEMxIiwidHlwZSI6ImZpZWxkIiwiaXAiOlsiMTQ5LjE1NC4xNjAuMC8yMCIsIjE4NS43Ni4xNTEuMC8yNCIsIjkxLjEwNS4xOTIuMC8yMyIsIjkxLjEwOC4xNi4wLzIxIiwiOTEuMTA4LjQuMC8yMiIsIjkxLjEwOC41Ni4wLzIyIiwiOTEuMTA4LjguMC8yMSJdLCJvdXRib3VuZFRhZyI6InByb3h5In0seyJfX25hbWVfXyI6IlByb3h5IFdoYXRzQXBwIENJRFIiLCJpZCI6IjVGQkM4NjNBLUVCMEYtNEEzQi1BQUJBLTNGOTc4MTIxOUIwOCIsInR5cGUiOiJmaWVsZCIsImlwIjpbIjEyOS4xMzQuMC4wLzE3IiwiMTU3LjI0MC4wLjAvMTYiLCIxNjMuNjQuMC4wLzEyIiwiMTczLjI1Mi42NC4wLzE4IiwiMTg1LjYwLjIxNi4wLzIyIiwiMjA0LjE1LjIwLjAvMjIiLCIzMS4xMy4yNC4wLzIxIiwiMzEuMTMuNjQuMC8xOCIsIjU3LjE0MS4wLjAvMjAiLCI1Ny4xNDQuMC4wLzE0IiwiNjYuMjIwLjE0NC4wLzIwIiwiNjkuMTcxLjE5Mi4wLzE4IiwiNjkuNjMuMTYwLjAvMTkiLCI3NC4xMTkuNzYuMC8yMiJdLCJvdXRib3VuZFRhZyI6InByb3h5In0seyJfX25hbWVfXyI6IlByb3h5IFJvYmxveCBDSURSIiwiaWQiOiJBQTMyOEQ4Ny1CRDk0LTQ2NjEtOEI4Ri1CODg2MjNGMzlBNjEiLCJ0eXBlIjoiZmllbGQiLCJpcCI6WyIxMjguMTE2LjAuMC8xNyJdLCJvdXRib3VuZFRhZyI6InByb3h5In0seyJfX25hbWVfXyI6IkRpcmVjdCBiaXR0b3JyZW50IiwiaWQiOiJBOERDNzYyOC0zQTkxLTRFRDAtQkVFRS01OEJEOEE2Mzc4MEYiLCJ0eXBlIjoiZmllbGQiLCJwcm90b2NvbCI6WyJiaXR0b3JyZW50Il0sIm91dGJvdW5kVGFnIjoiZGlyZWN0In0seyJfX25hbWVfXyI6IkRpcmVjdCBwcml2YXRlIENJRFIiLCJpZCI6IjY5RDkzQTgyLThEMjMtNERFOS1BMjgzLThBNUYwMjMxQzA5QSIsInR5cGUiOiJmaWVsZCIsImlwIjpbImdlb2lwOnByaXZhdGUiXSwib3V0Ym91bmRUYWciOiJkaXJlY3QifSx7Il9fbmFtZV9fIjoiRGlyZWN0IHByaXZhdGUgZG9tYWlucyIsImlkIjoiRUJBRUVBRUItRkFEQy00MTM4LUI3OEEtN0M2QjdGMTc2RDA0IiwidHlwZSI6ImZpZWxkIiwiZG9tYWluIjpbImdlb3NpdGU6cHJpdmF0ZSJdLCJvdXRib3VuZFRhZyI6ImRpcmVjdCJ9LHsiX19uYW1lX18iOiJEaXJlY3QgZWxzZSIsImlkIjoiRENCNTA0OTMtMUQzNS00QzI4LUExQTgtMUIzNTU2OTEzRjRFIiwidHlwZSI6ImZpZWxkIiwicG9ydCI6IjAtNjU1MzUiLCJvdXRib3VuZFRhZyI6ImRpcmVjdCJ9XX0=
@@ -37,7 +43,7 @@ eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiMUJDRUI2MDgtODhERS00NTE4LTlD
 3. Select the `runetfreedom/russia-v2ray-rules-dat` option.
 4. Save settings to initiate the `.dat` file download.
 
-![Step 1: Geo Asset Configuration](https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/images/geofiles_setting.png)
+![Step 1: Geo Asset Configuration](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/geofiles_setting.png)
 
 ### 2. Import rules
 1. Navigate to **Settings** > **Routing Setting**.
@@ -47,14 +53,14 @@ eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiMUJDRUI2MDgtODhERS00NTE4LTlD
 5. Click **Import rules from subscription url**.
 6. Select **Append** when prompted, then click **Confirm**.
 
-![Step 2: Rule Import Process](https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/images/importing_rules.png)
+![Step 2: Rule Import Process](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/importing_rules.png)
 
 ### 3. Activate the routing profile
 1. On the main application window, locate the **Routing** dropdown at the bottom.
 2. Select the profile you just created.
 3. Enable **Tun Mode** or **System Proxy** depending on your specific requirements.
 
-![Step 3: Activating the Route](https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/images/using_profiles.png)
+![Step 3: Activating the Route](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/using_profiles.png)
 
 ---
 
@@ -66,7 +72,7 @@ eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiMUJDRUI2MDgtODhERS00NTE4LTlD
 3. Locate **Geo files source** and select `runetfreedom/russia-v2ray-rules-dat` from the dropdown list.
 4. Tap the **Cloud icon** to start the download. Wait until the `.dat` files are fully updated.
 
-![Main Screen](https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/images/v2raytun_geo.png)
+<img src="https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/v2raytun_geo.png" width="400">
 
 ### 2. Set domain strategy
 1. In the **Routing** menu, find the **Domain Strategy** setting.
@@ -75,7 +81,7 @@ eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiMUJDRUI2MDgtODhERS00NTE4LTlD
 4. In v2RayTun, tap the **three dots menu** (top right).
 5. Select **Import ruleset from clipboard**.
 
-![Routing Menu](https://raw.githubusercontent.com/Winterstarf/v2rayN-rules/refs/heads/main/images/v2raytun_routing.png)
+<img src="https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/v2raytun_routing.png" width="400">
 
 ---
 
