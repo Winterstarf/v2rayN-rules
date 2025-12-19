@@ -111,7 +111,8 @@
       "ttwstatic.com",
       "videoframe2.com",
       "ynoproject.net",
-      "yume.wiki"
+      "yume.wiki",
+      "b42map.com"
     ],
     "enabled": true,
     "remarks": "Proxy custom domains"
@@ -212,3 +213,4 @@
   }
 
 ]
+
