@@ -72,7 +72,7 @@ eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiMUJDRUI2MDgtODhERS00NTE4LTlD
 3. Locate **Geo files source** and select `runetfreedom/russia-v2ray-rules-dat` from the dropdown list.
 4. Tap the **Cloud icon** to start the download. Wait until the `.dat` files are fully updated.
 
-<img src="https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/v2raytun_geo.png" width="400">
+<img src="https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/v2raytun_geo.png" width="350">
 
 ### 2. Set domain strategy
 1. In the **Routing** menu, find the **Domain Strategy** setting.
@@ -81,7 +81,7 @@ eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiMUJDRUI2MDgtODhERS00NTE4LTlD
 4. In v2RayTun, tap the **three dots menu** (top right).
 5. Select **Import ruleset from clipboard**.
 
-<img src="https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/v2raytun_routing.png" width="400">
+<img src="https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/v2raytun_routing.png" width="350">
 
 ---
 
