@@ -9,84 +9,34 @@
     "remarks": "Block Ads"
   },
   {
-    "port": "",
     "outboundTag": "direct",
-    "protocol": [
-      "bittorrent"
-    ],
-    "enabled": true,
-    "remarks": "Direct bittorrent"
-  },
-  {
-    "port": "",
-    "outboundTag": "direct",
-    "ip": [
-      "geoip:private"
-    ],
     "domain": [
       "geosite:private"
     ],
     "enabled": true,
-    "remarks": "Direct private"
+    "remarks": "Direct private domains"
   },
   {
-    "port": "",
     "outboundTag": "proxy",
-    "ip": [
-      "34.0.0.0/16",
-      "34.1.224.0/19",
-      "35.207.0.0/16",
-      "35.212.0.0/14",
-      "35.217.0.0/18",
-      "35.219.224.0/19",
-      "66.22.192.0/18",
-      "149.154.160.0/20",
-      "185.76.151.0/24",
-      "91.105.192.0/23",
-      "91.108.16.0/21",
-      "91.108.4.0/22",
-      "91.108.56.0/22",
-      "91.108.8.0/21",
-      "129.134.0.0/17",
-      "157.240.0.0/16",
-      "163.64.0.0/12",
-      "173.252.64.0/18",
-      "185.60.216.0/22",
-      "204.15.20.0/22",
-      "31.13.24.0/21",
-      "31.13.64.0/18",
-      "57.141.0.0/20",
-      "57.144.0.0/14",
-      "66.220.144.0/20",
-      "69.171.192.0/18",
-      "69.63.160.0/19",
-      "74.119.76.0/22"
-    ],
     "domain": [
       "geosite:discord",
       "geosite:telegram",
       "geosite:whatsapp"
     ],
     "enabled": true,
-    "remarks": "Proxy social"
+    "remarks": "Proxy social domains"
   },
   {
-    "port": "",
     "outboundTag": "proxy",
-    "ip": [
-      "geoip:ru-blocked-community",
-      "geoip:re-filter"
-    ],
     "domain": [
       "geosite:ru-blocked",
       "geosite:google-gemini",
       "geosite:roblox"
     ],
     "enabled": true,
-    "remarks": "Proxy blocked"
+    "remarks": "Proxy blocked domains"
   },
   {
-    "port": "",
     "outboundTag": "proxy",
     "domain": [
       "allarknow.online",
@@ -163,7 +113,68 @@
       "nexusmods.com"
     ],
     "enabled": true,
-    "remarks": "Proxy custom"
+    "remarks": "Proxy custom domains"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "protocol": [
+      "bittorrent"
+    ],
+    "enabled": true,
+    "remarks": "Direct bittorrent"
+  },
+  {
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:private"
+    ],
+    "enabled": true,
+    "remarks": "Direct private CIDR"
+  },
+  {
+    "outboundTag": "proxy",
+    "ip": [
+      "34.0.0.0/16",
+      "34.1.224.0/19",
+      "35.207.0.0/16",
+      "35.212.0.0/14",
+      "35.217.0.0/18",
+      "35.219.224.0/19",
+      "66.22.192.0/18",
+      "149.154.160.0/20",
+      "185.76.151.0/24",
+      "91.105.192.0/23",
+      "91.108.16.0/21",
+      "91.108.4.0/22",
+      "91.108.56.0/22",
+      "91.108.8.0/21",
+      "129.134.0.0/17",
+      "157.240.0.0/16",
+      "163.64.0.0/12",
+      "173.252.64.0/18",
+      "185.60.216.0/22",
+      "204.15.20.0/22",
+      "31.13.24.0/21",
+      "31.13.64.0/18",
+      "57.141.0.0/20",
+      "57.144.0.0/14",
+      "66.220.144.0/20",
+      "69.171.192.0/18",
+      "69.63.160.0/19",
+      "74.119.76.0/22"
+    ],
+    "enabled": true,
+    "remarks": "Proxy social CIDR"
+  },
+  {
+    "outboundTag": "proxy",
+    "ip": [
+      "geoip:ru-blocked-community",
+      "geoip:re-filter"
+    ],
+    "enabled": true,
+    "remarks": "Proxy blocked CIDR"
   },
   {
     "port": "0-65535",
