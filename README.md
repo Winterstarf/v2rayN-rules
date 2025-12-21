@@ -14,12 +14,12 @@ There currently exists 3 routing "profiles":
 | :--- | :--- 
 | **blocked_only** | Proxies only known blocked domains and CIDR ranges
 | **except_ru** | Proxies all traffic except for Russian domains and IP space
-| **everything** | Routes all traffic through the proxy
+| **all** | Routes all traffic through the proxy
 
-### Raw links for v2rayN/v2rayNG
+### Raw links for v2rayN/v2rayNG with .json files
 * **blocked_only.json**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/blocked_only.json`
 * **except_ru.json**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/except_ru.json`
-* **everything.json**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/everything.json`
+* **all.json**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/all.json`
 
 ### Base64 encoded rules for v2RayTun
 * **blocked_only**: 
@@ -30,7 +30,7 @@ eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiMTc1QUE2NzMtMkVENC00QjNELUE2
 ```
 eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiOTgwMTc5NDQtQjdDMC00NEE4LTkyRDYtRUJBQUQyOTlFRTY2IiwiYmFsYW5jZXJzIjpbXSwiZG9tYWluTWF0Y2hlciI6Imh5YnJpZCIsIm5hbWUiOiJSdWxlc2V0IiwicnVsZXMiOlt7Il9fbmFtZV9fIjoiQmxvY2sgQWRzIiwiaWQiOiIxMTgyN0E3MS1BMDZDLTRDMDUtOTI0RC1COTQ5QTYwMjMxN0UiLCJ0eXBlIjoiZmllbGQiLCJkb21haW4iOlsiZ2Vvc2l0ZTpjYXRlZ29yeS1hZHMtYWxsIl0sIm91dGJvdW5kVGFnIjoiYmxvY2sifSx7Il9fbmFtZV9fIjoiRGlyZWN0IFJ1c3NpYW4gQ0lEUiIsImlkIjoiMjIxQkJCNzktMTA2Qi00MDc2LUI4NTktMEUyN0ZFMkE5OTcyIiwidHlwZSI6ImZpZWxkIiwiaXAiOlsiZ2VvaXA6cnUiXSwib3V0Ym91bmRUYWciOiJkaXJlY3QifSx7Il9fbmFtZV9fIjoiRGlyZWN0IGJpdHRvcnJlbnQiLCJpZCI6IkQwNTlEREZELTg0RjktNDQ1NC1CRTE5LTI5RUI3MDA3NkMwOCIsInR5cGUiOiJmaWVsZCIsInByb3RvY29sIjpbImJpdHRvcnJlbnQiXSwib3V0Ym91bmRUYWciOiJkaXJlY3QifSx7Il9fbmFtZV9fIjoiRGlyZWN0IHByaXZhdGUgQ0lEUiIsImlkIjoiRTJENkVDOUYtMTU1MC00MDU0LTg1OUYtMTEzQTI4OUJBNEEzIiwidHlwZSI6ImZpZWxkIiwiaXAiOlsiZ2VvaXA6cHJpdmF0ZSJdLCJvdXRib3VuZFRhZyI6ImRpcmVjdCJ9LHsiX19uYW1lX18iOiJEaXJlY3QgcHJpdmF0ZSBkb21haW5zIiwiaWQiOiI0ODBDMDY5OS0yOEQ4LTQ2QzEtQUExRi00N0U3NkNBQUYxN0YiLCJ0eXBlIjoiZmllbGQiLCJkb21haW4iOlsiZ2Vvc2l0ZTpwcml2YXRlIl0sIm91dGJvdW5kVGFnIjoiZGlyZWN0In0seyJfX25hbWVfXyI6IlByb3h5IGVsc2UiLCJpZCI6IkRERDQyRjc4LTBBMDEtNEQxOC1CRDk5LTczMkYzOTQ5QUZCMCIsInR5cGUiOiJmaWVsZCIsInBvcnQiOiIwLTY1NTM1Iiwib3V0Ym91bmRUYWciOiJwcm94eSJ9XX0=
 ```
-* **everything**:
+* **all**:
 ```
 eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiMUJDRUI2MDgtODhERS00NTE4LTlDRkEtMjgyNjVEQ0M1QkVEIiwiYmFsYW5jZXJzIjpbXSwiZG9tYWluTWF0Y2hlciI6Imh5YnJpZCIsIm5hbWUiOiJSdWxlc2V0IiwicnVsZXMiOlt7Il9fbmFtZV9fIjoiQmxvY2sgQWRzIiwiaWQiOiJGNERGNDQ1NS0zMzk1LTQwODYtQjgzNS02MTZCNTAzQkMwRkUiLCJ0eXBlIjoiZmllbGQiLCJkb21haW4iOlsiZ2Vvc2l0ZTpjYXRlZ29yeS1hZHMtYWxsIl0sIm91dGJvdW5kVGFnIjoiYmxvY2sifSx7Il9fbmFtZV9fIjoiRGlyZWN0IHByaXZhdGUgQ0lEUiIsImlkIjoiOTBFQUQ5Q0YtOTcyMS00M0Y4LUIyNUItMzI4ODFGODg5MDdDIiwidHlwZSI6ImZpZWxkIiwiaXAiOlsiZ2VvaXA6cHJpdmF0ZSJdLCJvdXRib3VuZFRhZyI6ImRpcmVjdCJ9LHsiX19uYW1lX18iOiJEaXJlY3QgcHJpdmF0ZSBkb21haW5zIiwiaWQiOiIxQjQwQUZEQS00MjFFLTQ2QUMtOTA0Qy1ERUQzQzNEQzgxMDIiLCJ0eXBlIjoiZmllbGQiLCJkb21haW4iOlsiZ2Vvc2l0ZTpwcml2YXRlIl0sIm91dGJvdW5kVGFnIjoiZGlyZWN0In0seyJfX25hbWVfXyI6IlByb3h5IGVsc2UiLCJpZCI6Ijg3NDBGM0I2LUFEQUEtNDg5RC1BQTExLTVGNTk1N0E4QzQ5NyIsInR5cGUiOiJmaWVsZCIsInBvcnQiOiIwLTY1NTM1Iiwib3V0Ym91bmRUYWciOiJwcm94eSJ9XX0=
 ```
@@ -87,7 +87,7 @@ eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiMUJDRUI2MDgtODhERS00NTE4LTlD
 
 ---
 
-## Trivia & Advanced Usage
+## Trivia & Advanced Usage for v2RayTun, v2rayNG and possibly other apps
 
 * **Custom service outing:** You can manually route specific domains or services by using the **Services** menu on the main screen. This is useful for forcing specific sites through the proxy regardless of global rules.
 * **Custom app routing:** In the **Routing** menu, you can choose exactly which apps on your device use the proxy. 
