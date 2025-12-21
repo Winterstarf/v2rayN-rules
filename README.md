@@ -53,7 +53,6 @@ First, you must download the specific .dat files for the region.
 1. Open **Settings** > **Option Setting** > **v2rayN settings**.
 2. Locate the **Geo files source** dropdown.
 3. Select the `runetfreedom/russia-v2ray-rules-dat` option.
-4. Save settings to finalize the source configuration.
 
 ![Step 1: Geo Asset Configuration](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/geofiles_setting.png)
 
