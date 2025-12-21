@@ -39,30 +39,48 @@ eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiMUJDRUI2MDgtODhERS00NTE4LTlD
 
 ---
 
-## v2rayN guide
+## v2rayN Guide: Custom Routing Setup
 
-### 1. Configure Geo-Asset source
+Follow these steps to initialize the Russian geo-assets and apply my custom routing configurations.
+
+---
+
+### 1. Download geofiles and default presets
+First, you must download the specific .dat files for the region.
+1. Open **Settings** > **Regional presets setting**.
+2. Select **Russia** from the list. This downloads the necessary `.dat` files.
+3. **Note:** This will create default profiles. You can use them, or proceed to the next steps to **overwrite/delete** them with my (or your) custom settings.
+
+### 2. Configure geofiles source (optional, but check if it's set correctly anyways)
 1. Open **Settings** > **Option Setting** > **v2rayN settings**.
 2. Locate the **Geo files source** dropdown.
 3. Select the `runetfreedom/russia-v2ray-rules-dat` option.
-4. Save settings to initiate the `.dat` file download.
+4. Save settings to finalize the source configuration.
 
 ![Step 1: Geo Asset Configuration](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/geofiles_setting.png)
 
-### 2. Import rules
+### 3. Import My Custom Rules
+To use my specific profiles (overwriting the defaults if desired):
 1. Navigate to **Settings** > **Routing Setting**.
-2. Click the **Add** button.
-3. Enter a custom name in the **Remark** field with any name and choose **IPIfNonMatch** as domain strategy.
-4. Paste the raw link for your chosen profile into the **URL** field.
-5. Click **Import rules from subscription url**.
-6. Select **Append** when prompted, then click **Confirm** (note that if you're updating the rules from the url you must **replace** and not **append**).
+2. Click **Add** to create a new profile (or double-click an existing one to overwrite it).
+3. **Remark:** Enter a name for the profile.
+4. **Domain Strategy:** Choose **IPIfNonMatch** for "blocked_only" and "except_ru", or **AsIs** for "all".
+5. **URL:** Paste the raw link for my custom profile.
+6. Click **Import rules from subscription url**.
+7. Select **Append** if you've created a new profile, or **Replace** if you're editing a default preset.
+
+> ### Updating
+> When you need to update the rules to the latest version:
+> 1. Open your existing routing profile in **Routing Setting**.
+> 2. Click **Import rules from subscription url** again.
+> 3. When prompted, you **must select Replace** to overwrite the old rules with the updated ones.
 
 ![Step 2: Rule Import Process](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/importing_rules.png)
 
-### 3. Activate the routing profile
-1. On the main application window, locate the **Routing** dropdown at the bottom.
-2. Select the profile you just created.
-3. Enable **Tun Mode** or **System Proxy** depending on your specific requirements.
+### 4. Activate the Routing Profile
+1. On the main application window, look for the **Routing** dropdown menu at the bottom.
+2. Select the custom profile you just created/updated.
+3. Enable **Tun Mode** or **System Proxy** depending on your needs.
 
 ![Step 3: Activating the Route](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/using_profiles.png)
 
