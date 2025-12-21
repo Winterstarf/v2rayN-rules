@@ -11,20 +11,23 @@
   {
     "port": "",
     "outboundTag": "direct",
-    "ip": [
-      "geoip:private"
+    "protocol": [
+      "bittorrent"
     ],
     "enabled": true,
-    "remarks": "Direct private CIDR"
+    "remarks": "Direct bittorrent"
   },
   {
     "port": "",
     "outboundTag": "direct",
+    "ip": [
+      "geoip:private"
+    ],
     "domain": [
       "geosite:private"
     ],
     "enabled": true,
-    "remarks": "Direct private domains"
+    "remarks": "Direct private"
   },
   {
     "port": "0-65535",
