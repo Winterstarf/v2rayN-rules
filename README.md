@@ -62,7 +62,7 @@ To use my specific profiles (overwriting the defaults if desired):
 1. Navigate to **Settings** > **Routing Setting**.
 2. Click **Add** to create a new profile (or double-click an existing one to overwrite it).
 3. **Remark:** Enter a name for the profile.
-4. **Domain Strategy:** Choose **IPIfNonMatch** or **IPOnDemand** (if the previous doesnt't work) for "blocked_only" and "except_ru", or **AsIs** for "all".
+4. **Domain Strategy:** Choose **IPOnDemand**.
 5. **URL:** Paste the raw link for my custom profile.
 6. Click **Import rules from subscription url**.
 7. Select **Append** if you've created a new profile, or **Replace** if you're editing a default preset.
@@ -95,11 +95,10 @@ To use my specific profiles (overwriting the defaults if desired):
 <img src="https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/v2raytun_geo.png" width="350">
 
 ### 2. Set domain strategy
-1. In the **Routing** menu, find the **Domain Strategy** setting.
-2. Choose **IPIfNonMatch** or **IPOnDemand** if the previous doesnt' work.
-3. Copy the chosen Base64 code to your clipboard.
-4. In v2RayTun, tap the **three dots menu** (top right).
-5. Select **Import ruleset from clipboard**.
+1. In the **Routing** menu, find the **Domain Strategy** setting and choose **IPOnDemand**.
+2. Copy the chosen Base64 code to your clipboard.
+3. In v2RayTun, tap the **three dots menu** (top right).
+4. Select **Import ruleset from clipboard**.
 
 <img src="https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/v2raytun_routing.png" width="350">
 
