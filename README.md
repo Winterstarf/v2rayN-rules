@@ -62,7 +62,7 @@ To use my specific profiles (overwriting the defaults if desired):
 2. Click **Add** to create a new profile (or double-click an existing one to overwrite it).
 3. **Remark:** Enter a name for the profile.
 4. **Domain Strategy:** Choose **IPOnDemand**.
-5. **URL:** Paste the raw link for my custom profile.
+5. **URL:** Paste the raw link of one of the profiles above.
 6. Click **Import rules from subscription url**.
 7. Select **Append** if you've created a new profile, or **Replace** if you're editing a default preset.
 
