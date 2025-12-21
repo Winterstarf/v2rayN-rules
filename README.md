@@ -2,7 +2,7 @@
 These rules are meant to be used with whatever XRay core-supported client you want. For desktop, I can recommend v2rayN, which is available on Linux, Win and macOS.
 As for mobile, v2RayTun is there on Android and iOS, as well as v2rayNG (Android only), though there are other options like V2Box and Happ (which I do not recommend, however, as they're pieces of ad-infested trash).
 
-If you want to use cores like Sing-Box or mihomo (Clash/Meta), there are converters to **.srs** and **.mrs** files available, though because of lack of support of some of the transport options on these cores I restrain from using them at this time.
+If you want to use cores like Sing-Box or mihomo (Clash/Meta), there are converters to **.srs** and **.mrs** files available. **Throne** is a good singbox client, for example.
 
 I should also mention that the rules below are using geo files from the **[runetfreedom](https://github.com/runetfreedom/russia-v2ray-rules-dat)** repo, containing "geo tags" (i.e. geoip:google, geosite:meta), which are useful if my rules are not sufficient for your use scenario.
 
