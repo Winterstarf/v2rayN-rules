@@ -16,6 +16,8 @@ There currently exists 3 routing "profiles":
 | **except_ru** | Proxies all traffic except for Russian domains and IP space
 | **all** | Routes all traffic through the proxy
 
+Please do be careful when setting the domain strategy in your specific app, as "blocked_only" and "except_ru" profiles should always be used with **IPIfNonMatch** strategy, while "all" is only to be used with **AsIs** or with none set (it defaults to AsIs).
+
 ### Raw links for v2rayN/v2rayNG with .json files
 * **blocked_only.json**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/blocked_only.json`
 * **except_ru.json**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/except_ru.json`
