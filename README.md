@@ -16,8 +16,6 @@ There currently exists 3 routing "profiles":
 | **except_ru** | Proxies all traffic except for Russian domains and IP space
 | **all** | Routes all traffic through the proxy
 
-Please do be careful when setting the domain strategy in your specific app, as "blocked_only" and "except_ru" profiles should always be used with **IPIfNonMatch** strategy, while "all" is only to be used with **AsIs** or with none set (it defaults to AsIs).
-
 ### Raw links for v2rayN/v2rayNG with .json files
 * **blocked_only.json**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/blocked_only.json`
 * **except_ru.json**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/except_ru.json`
@@ -64,7 +62,7 @@ To use my specific profiles (overwriting the defaults if desired):
 1. Navigate to **Settings** > **Routing Setting**.
 2. Click **Add** to create a new profile (or double-click an existing one to overwrite it).
 3. **Remark:** Enter a name for the profile.
-4. **Domain Strategy:** Choose **IPIfNonMatch** for "blocked_only" and "except_ru", or **AsIs** for "all".
+4. **Domain Strategy:** Choose **IPIfNonMatch** or **IPOnDemand** (if the previous doesnt't work) for "blocked_only" and "except_ru", or **AsIs** for "all".
 5. **URL:** Paste the raw link for my custom profile.
 6. Click **Import rules from subscription url**.
 7. Select **Append** if you've created a new profile, or **Replace** if you're editing a default preset.
@@ -98,7 +96,7 @@ To use my specific profiles (overwriting the defaults if desired):
 
 ### 2. Set domain strategy
 1. In the **Routing** menu, find the **Domain Strategy** setting.
-2. Choose **IPIfNonMatch**. This ensures that if a domain doesn't match a rule immediately, the app will resolve the IP and check the rules again for a more accurate match.
+2. Choose **IPIfNonMatch** or **IPOnDemand** if the previous doesnt' work.
 3. Copy the chosen Base64 code to your clipboard.
 4. In v2RayTun, tap the **three dots menu** (top right).
 5. Select **Import ruleset from clipboard**.
