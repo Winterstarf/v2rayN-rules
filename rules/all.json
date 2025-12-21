@@ -9,6 +9,14 @@
     "remarks": "Block Ads"
   },
   {
+    "outboundTag": "direct",
+    "domain": [
+      "geosite:private"
+    ],
+    "enabled": true,
+    "remarks": "Direct private domains"
+  },
+  {
     "port": "",
     "outboundTag": "direct",
     "protocol": [
@@ -18,16 +26,12 @@
     "remarks": "Direct bittorrent"
   },
   {
-    "port": "",
     "outboundTag": "direct",
     "ip": [
       "geoip:private"
     ],
-    "domain": [
-      "geosite:private"
-    ],
     "enabled": true,
-    "remarks": "Direct private"
+    "remarks": "Direct private CIDR"
   },
   {
     "port": "0-65535",
