@@ -10,31 +10,40 @@
   },
   {
     "port": "",
-    "outboundTag": "proxy",
-    "ip": [
-      "1.0.0.1",
-      "1.1.1.1",
-      "8.8.8.8",
-      "8.8.4.4"
+    "outboundTag": "direct",
+    "domain": [
+      "geosite:private"
     ],
     "enabled": true,
-    "remarks": "Proxy DNS"
+    "remarks": "Direct private domains"
   },
   {
     "port": "",
-    "outboundTag": "proxy",
+    "outboundTag": "direct",
     "ip": [
-      "geoip:ru-blocked",
-      "geoip:google"
+      "geoip:private"
     ],
     "enabled": true,
-    "remarks": "Proxy blocked CIDR"
+    "remarks": "Direct private CIDR"
   },
   {
     "port": "",
     "outboundTag": "proxy",
     "domain": [
-      "geosite:ru-blocked"
+      "geosite:discord",
+      "geosite:telegram",
+      "geosite:whatsapp"
+    ],
+    "enabled": true,
+    "remarks": "Proxy social domains"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:ru-blocked",
+      "geosite:google-gemini",
+      "geosite:roblox"
     ],
     "enabled": true,
     "remarks": "Proxy blocked domains"
@@ -175,10 +184,11 @@
     "port": "",
     "outboundTag": "proxy",
     "ip": [
-      "128.116.0.0/17"
+      "geoip:ru-blocked-community",
+      "geoip:re-filter"
     ],
     "enabled": true,
-    "remarks": "Proxy Roblox CIDR"
+    "remarks": "Proxy blocked CIDR"
   },
   {
     "port": "",
@@ -190,30 +200,9 @@
     "remarks": "Direct bittorrent"
   },
   {
-    "port": "",
-    "outboundTag": "direct",
-    "ip": [
-      "geoip:private"
-    ],
-    "enabled": true,
-    "remarks": "Direct private CIDR"
-  },
-  {
-    "port": "",
-    "outboundTag": "direct",
-    "domain": [
-      "geosite:private"
-    ],
-    "enabled": true,
-    "remarks": "Direct private domains"
-  },
-  {
     "port": "0-65535",
     "outboundTag": "direct",
     "enabled": true,
     "remarks": "Direct else"
   }
-
 ]
-
-
