@@ -11,15 +11,6 @@
   {
     "port": "",
     "outboundTag": "direct",
-    "ip": [
-      "geoip:ru"
-    ],
-    "enabled": true,
-    "remarks": "Direct Russian CIDR"
-  },
-  {
-    "port": "",
-    "outboundTag": "direct",
     "protocol": [
       "bittorrent"
     ],
@@ -32,17 +23,24 @@
     "ip": [
       "geoip:private"
     ],
-    "enabled": true,
-    "remarks": "Direct private CIDR"
-  },
-  {
-    "port": "",
-    "outboundTag": "direct",
     "domain": [
       "geosite:private"
     ],
     "enabled": true,
-    "remarks": "Direct private domains"
+    "remarks": "Direct private"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:ru"
+    ],
+    "domain": [
+      "geosite:ru-available-only-inside",
+      "geosite:category-ru"
+    ],
+    "enabled": true,
+    "remarks": "Direct RU"
   },
   {
     "port": "0-65535",
