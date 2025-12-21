@@ -53,7 +53,7 @@ eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiMUJDRUI2MDgtODhERS00NTE4LTlD
 3. Enter a custom name in the **Remark** field with any name and choose **IPIfNonMatch** as domain strategy.
 4. Paste the raw link for your chosen profile into the **URL** field.
 5. Click **Import rules from subscription url**.
-6. Select **Append** when prompted, then click **Confirm**.
+6. Select **Append** when prompted, then click **Confirm** (note that if you're updating the rules from the url you must **replace** and not **append**).
 
 ![Step 2: Rule Import Process](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/importing_rules.png)
 
