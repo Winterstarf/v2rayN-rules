@@ -37,11 +37,7 @@ eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiMUJDRUI2MDgtODhERS00NTE4LTlD
 
 ---
 
-## v2rayN Guide: Custom Routing Setup
-
-Follow these steps to initialize the Russian geo-assets and apply my custom routing configurations.
-
----
+## v2rayN
 
 ### 1. Download geofiles and default presets
 First, you must download the specific .dat files for the region.
@@ -56,7 +52,7 @@ First, you must download the specific .dat files for the region.
 
 ![Step 1: Geo Asset Configuration](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/geofiles_setting.png)
 
-### 3. Import My Custom Rules
+### 3. Import custom rules
 To use my specific profiles (overwriting the defaults if desired):
 1. Navigate to **Settings** > **Routing Setting**.
 2. Click **Add** to create a new profile (or double-click an existing one to overwrite it).
@@ -81,9 +77,26 @@ To use my specific profiles (overwriting the defaults if desired):
 
 ![Step 3: Activating the Route](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/using_profiles.png)
 
+## Throne
+
+### 1. Using default presets
+1. In **Routing** > **Downloads Profiles** choose whatever preset suits you.
+2. In the same **Routing** menu, after the preset is downloaded, select it.
+3. In **Settings** > **Tun Settings** enable **Tun Routing**.
+
+
+### 2. Using custom presets
+1. In **Routing** > **Routing Settings** > **Route** click **New**.
+2. Set **Default outbound** to **Direct** if you've chosen "blocked_only", or to **Proxy** if other two profiles.
+3. In **Advanced** click on **Import JSON** and paste in the chosen .json profile.
+5. Select the profile in the **Routing** menu.
+6. In **Settings** > **Tun Settings** enable **Tun Routing**.
+
+Enable **Tun Mode** or **System Proxy**, preferably **Tun** if you plan on gaming and using Discord, and activate a profile by right clicking and selecting **Start**, and you're good to go.
+
 ---
 
-## v2RayTun guide
+## v2RayTun
 
 ### 1. Configure Geo-Asset source
 1. Open the app and go to the **Routing** menu.
