@@ -1,0 +1,33 @@
+[{
+    "action": "hijack-dns",
+    "protocol": "dns"
+}
+,{
+    "action": "route",
+    "outbound": "direct",
+    "rule_set": [
+        "geosite-private",
+        "geoip-private"
+    ]
+}
+,{
+    "action": "reject",
+    "rule_set": [
+        "geosite-category-ads-all"
+    ]
+}
+,{
+    "action": "route",
+    "outbound": "proxy",
+    "rule_set": [
+        "geosite-ru-blocked",
+        "geosite-google-gemini",
+        "geosite-discord",
+        "geosite-telegram",
+        "geosite-whatsapp",
+        "geosite-roblox",
+        "geoip-ru-blocked",
+        "geoip-telegram"
+    ]
+}
+]
