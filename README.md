@@ -1,27 +1,37 @@
-# Important
-These rules are meant to be used with whatever XRay core-supported client you want. For desktop, I can recommend v2rayN, which is available on Linux, Win and macOS.
-As for mobile, v2RayTun is there on Android and iOS, as well as v2rayNG (Android only), though there are other options like V2Box and Happ (which I do not recommend, however, as they're pieces of ad-infested trash).
+# Preambule
+These presets are made with the intention to proxy only those domains and CIDRs that are blocked in Russia, and direct domestic and non-restricted traffic to not hog up my server's bandwidth.\
+Even though I initially created this repo to only contain v2ray/xray .json-formatted presets, I also included presets for sing-box.
 
-If you want to use cores like Sing-Box or mihomo (Clash/Meta), there are converters to **.srs** and **.mrs** files available. **Throne** is a good singbox client, for example.
+I should also mention that the presets are made possible using geofiles from the [runetfreedom](https://github.com/runetfreedom/russia-v2ray-rules-dat) repo, which are maintained by the community.
 
-I should also mention that the rules below are using geo files from the **[runetfreedom](https://github.com/runetfreedom/russia-v2ray-rules-dat)** repo, containing "geo tags" (i.e. geoip:google, geosite:meta), which are useful if my rules are not sufficient for your use scenario.
+## Client apps
+* **xray/v2ray** — [v2rayN](https://github.com/2dust/v2rayN) (Linux, Win, macOS), [v2rayNG](https://github.com/2dust/v2rayNG) (Android), v2RayTun (Android, iOS, Win (uses sing-box), Happ (*not recommended*)
+* **sing-box** — [Throne](https://github.com/throneproj/Throne) (Linux, Win, macOS), [NekoBox](https://github.com/MatsuriDayo/NekoBoxForAndroid) (Android (Play Store version has been compromised))
 
-## Routing rules
+## Presets
 
-There currently exists 3 routing "profiles":
+There currently exists 3 routing presets:
 
-| Profile | Description
+| Preset | Description
 | :--- | :--- 
 | **blocked_only** | Proxies only known blocked domains and CIDR ranges
-| **except_ru** | Proxies all traffic except for Russian domains and IP space
-| **all** | Routes all traffic through the proxy
+| **except_ru** | Proxies all traffic except for Russian domains and CIDRs
+| **all** | Proxies all traffic
 
-### Raw links for v2rayN/v2rayNG with .json files
-* **blocked_only.json**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/blocked_only.json`
-* **except_ru.json**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/except_ru.json`
-* **all.json**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/all.json`
+Whichever client you choose, they will *in theory* accept .json-fornmatted rules, but it varies by the core it uses, as **v2ray/xray** config format is different from that of **sing-box** etc.\
+Note that **v2ray/xray** and **sing-box** rules *might have* differences to some non-critical degree, but I usually try to keep parity between them when updating.
 
-### Base64 encoded rules for v2RayTun
+### Raw links for v2ray/xray core presets (v2rayN, v2rayNG)
+* **blocked_only**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/blocked_only.json`
+* **except_ru**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/except_ru.json`
+* **all**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/all.json`
+
+### Raw links for sing-box core presets (Throne)
+* **blocked_only**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/blocked_only-singbox.json`
+* **except_ru**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/except_ru-singbox.json`
+* **all**: `https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/rules/all-singbox.json`
+
+### Base64 encoded presets for v2RayTun
 * **blocked_only**: 
 ```
 eyJkb21haW5TdHJhdGVneSI6IklQSWZOb25NYXRjaCIsImlkIjoiMTc1QUE2NzMtMkVENC00QjNELUE2RUQtQTVGMEUyMTMyRUY2IiwiYmFsYW5jZXJzIjpbXSwiZG9tYWluTWF0Y2hlciI6Imh5YnJpZCIsIm5hbWUiOiJSdWxlc2V0IiwicnVsZXMiOlt7Il9fbmFtZV9fIjoiQmxvY2sgQWRzIiwiaWQiOiI5MDJDQjdGOS1BQzlBLTQzNEYtQTkyNS1FNEE2MTlEQkQ1OTAiLCJ0eXBlIjoiZmllbGQiLCJkb21haW4iOlsiZ2Vvc2l0ZTpjYXRlZ29yeS1hZHMtYWxsIl0sIm91dGJvdW5kVGFnIjoiYmxvY2sifSx7Il9fbmFtZV9fIjoiUHJveHkgRE5TIiwiaWQiOiIyRjg0RjNCQi1CQUM1LTRBM0UtOEIyRC1DOTM2M0VBQkI1NjQiLCJ0eXBlIjoiZmllbGQiLCJpcCI6WyIxLjAuMC4xIiwiMS4xLjEuMSIsIjguOC44LjgiLCI4LjguNC40Il0sIm91dGJvdW5kVGFnIjoicHJveHkifSx7Il9fbmFtZV9fIjoiUHJveHkgYmxvY2tlZCBDSURSIiwiaWQiOiI3NzY1NzJEQS1DRTQ0LTQ1QTQtODg2OC1DRDc1MzQ3NTQxRUEiLCJ0eXBlIjoiZmllbGQiLCJpcCI6WyJnZW9pcDpydS1ibG9ja2VkIiwiZ2VvaXA6Z29vZ2xlIl0sIm91dGJvdW5kVGFnIjoicHJveHkifSx7Il9fbmFtZV9fIjoiUHJveHkgYmxvY2tlZCBkb21haW5zIiwiaWQiOiJEMDlGOTVEMS1COEQzLTRCN0ItQUEzRS1DNUE2RDAwMDc5RTEiLCJ0eXBlIjoiZmllbGQiLCJkb21haW4iOlsiZ2Vvc2l0ZTpydS1ibG9ja2VkIl0sIm91dGJvdW5kVGFnIjoicHJveHkifSx7Il9fbmFtZV9fIjoiUHJveHkgY3VzdG9tIGRvbWFpbnMiLCJpZCI6IkM0RkVCMEU1LUZCNjYtNDg1MS1BQzEzLUU1NTlDQ0VGN0JENyIsInR5cGUiOiJmaWVsZCIsImRvbWFpbiI6WyJhbGxhcmtub3cub25saW5lIiwiYW1lbXYuY29tIiwiYW5pbWVnby5vcmciLCJhbmltZW5pbWUucnUiLCJhdG9taWNzLndzIiwiYmFja2xvZ2dkLmNvbSIsImJ5dGVkYXBtLmNvbSIsImJ5dGVnZWNrby1pMThuLmNvbSIsImJ5dGVvdmVyc2VhLmNvbSIsImNvb21lci5wYXJ0eSIsImNvb21lci5zdSIsImRvdXlpbi1wb3J0YWwuY29tIiwiZG91eWluLmNvbSIsImRvdXlpbnNlYy5jb20iLCJkb3V5aW5zdGF0aWMuY29tIiwiZG91eWludm9kLmNvbSIsImV6Z2lmLmNvbSIsImZvdHBybzEzNWFsdG8uY29tIiwiaWJ5dGVkdG9zLmNvbSIsImlieXRlaW1nLmNvbSIsImllc2RvdXlpbi5jb20iLCJpZXNkb3V5aW5hcGkuY29tIiwiaXBzdGF0cC5jb20iLCJpc25zc2RrLmNvbSIsImp1dC5zdSIsImtlbW9uby5wYXJ0eSIsImtlbW9uby5zdSIsImtlbW9uby5jciIsImx1bWV4LnNwYWNlIiwibXVsdC1mYW4udHYiLCJtdXNjZG4uY29tIiwibXVzaWNhbC5seSIsIm9icnV0LnNob3ciLCJwMTYtdGlrdG9rY2RuLWNvbS5ha2FtYWl6ZWQubmV0IiwicmV2ZXJiLmNvbSIsInJleW9ob2hvLnNwYWNlIiwic2dwc3RhdHAuY29tIiwic25kLnNjIiwic25kY2RuLmNvbSIsInNuc3Nkay5jb20iLCJzb3VuZGNsb3VkLmNsb3VkIiwic291bmRjbG91ZC5jb20iLCJzb3ZldHJvbWFudGljYS5jb20iLCJzb25pY2JpZHMuY29tIiwidGlrLXRva2FwaS5jb20iLCJ0aWt0b2suY29tIiwidGlrdG9rY2RuLWV1LmNvbSIsInRpa3Rva2Nkbi11cy5jb20iLCJ0aWt0b2tjZG4uY29tIiwidGlrdG9rZC5uZXQiLCJ0aWt0b2tkLm9yZyIsInRpa3Rva3YuY29tIiwidGlrdG9rdi5ldSIsInRpa3Rva3YudXMiLCJ0aWt0b2t3LmV1IiwidGlrdG9rdy51cyIsInR0bGl2ZWNkbi5jb20iLCJ0dHdzdGF0aWMuY29tIiwidmlkZW9mcmFtZTIuY29tIiwieW5vcHJvamVjdC5uZXQiLCJ5dW1lLndpa2kiLCJtb2RyaW50aC5jb20iLCJvcGVudnBuLm5ldCIsIm1vZHVsYXJncmlkLm5ldCIsInNwb25zb3IuYWpheS5hcHAiLCJsZWFndWVvZmxlZ2VuZHMuY29tIiwicmlvdGdhbWVzLmNvbSIsInBsYXl2YWxvcmFudC5jb20iLCJzdGVhbWhpc3RvcnkubmV0IiwiYjQybWFwLmNvbSIsImFuaWxpc3QuY28iLCJuZXh1c21vZHMuY29tIl0sIm91dGJvdW5kVGFnIjoicHJveHkifSx7Il9fbmFtZV9fIjoiUHJveHkgRGlzY29yZCBDSURSICIsImlkIjoiNjBEQTZDNzUtNjVGOC00QUYxLUE0MjctNjc3NUUwQjhGMDRCIiwidHlwZSI6ImZpZWxkIiwiaXAiOlsiMzQuMC4wLjAvMTYiLCIzNC4xLjIyNC4wLzE5IiwiMzUuMjA3LjAuMC8xNiIsIjM1LjIxMi4wLjAvMTQiLCIzNS4yMTcuMC4wLzE4IiwiMzUuMjE5LjIyNC4wLzE5IiwiNjYuMjIuMTkyLjAvMTgiXSwib3V0Ym91bmRUYWciOiJwcm94eSJ9LHsiX19uYW1lX18iOiJQcm94eSBUZWxlZ3JhbSBDSURSICIsImlkIjoiNkJDQ0UwRTYtNDc1Ni00OTU4LTgzRjEtMzAyNTI4NjU5NzMyIiwidHlwZSI6ImZpZWxkIiwiaXAiOlsiMTQ5LjE1NC4xNjAuMC8yMCIsIjE4NS43Ni4xNTEuMC8yNCIsIjkxLjEwNS4xOTIuMC8yMyIsIjkxLjEwOC4xNi4wLzIxIiwiOTEuMTA4LjQuMC8yMiIsIjkxLjEwOC41Ni4wLzIyIiwiOTEuMTA4LjguMC8yMSJdLCJvdXRib3VuZFRhZyI6InByb3h5In0seyJfX25hbWVfXyI6IlByb3h5IFdoYXRzQXBwIENJRFIiLCJpZCI6IkRFMkYwRkY0LUI2REQtNDQwMS1CRjY0LThCMkU4NzhGOUMwQyIsInR5cGUiOiJmaWVsZCIsImlwIjpbIjEyOS4xMzQuMC4wLzE3IiwiMTU3LjI0MC4wLjAvMTYiLCIxNjMuNjQuMC4wLzEyIiwiMTczLjI1Mi42NC4wLzE4IiwiMTg1LjYwLjIxNi4wLzIyIiwiMjA0LjE1LjIwLjAvMjIiLCIzMS4xMy4yNC4wLzIxIiwiMzEuMTMuNjQuMC8xOCIsIjU3LjE0MS4wLjAvMjAiLCI1Ny4xNDQuMC4wLzE0IiwiNjYuMjIwLjE0NC4wLzIwIiwiNjkuMTcxLjE5Mi4wLzE4IiwiNjkuNjMuMTYwLjAvMTkiLCI3NC4xMTkuNzYuMC8yMiJdLCJvdXRib3VuZFRhZyI6InByb3h5In0seyJfX25hbWVfXyI6IlByb3h5IFJvYmxveCBDSURSIiwiaWQiOiJGNzQ1MTM4NS1FNDM0LTQ0NTktQjNENS1BRUM5QjEyRUM3Q0UiLCJ0eXBlIjoiZmllbGQiLCJpcCI6WyIxMjguMTE2LjAuMC8xNyJdLCJvdXRib3VuZFRhZyI6InByb3h5In0seyJfX25hbWVfXyI6IkRpcmVjdCBiaXR0b3JyZW50IiwiaWQiOiI3OUI4OUYzNi1BNDU3LTRFMjEtOTBENy0yNDE4OTQ4NEI5MzUiLCJ0eXBlIjoiZmllbGQiLCJwcm90b2NvbCI6WyJiaXR0b3JyZW50Il0sIm91dGJvdW5kVGFnIjoiZGlyZWN0In0seyJfX25hbWVfXyI6IkRpcmVjdCBwcml2YXRlIENJRFIiLCJpZCI6IjI2MUQ2MjNGLUU1NkMtNEY3Qy04RTAwLTYxQjBGMzMxOEEwOSIsInR5cGUiOiJmaWVsZCIsImlwIjpbImdlb2lwOnByaXZhdGUiXSwib3V0Ym91bmRUYWciOiJkaXJlY3QifSx7Il9fbmFtZV9fIjoiRGlyZWN0IHByaXZhdGUgZG9tYWlucyIsImlkIjoiOEQ0NERBQzEtMDU3QS00NTNGLTg3QUYtODczMDM0OEZFMzcyIiwidHlwZSI6ImZpZWxkIiwiZG9tYWluIjpbImdlb3NpdGU6cHJpdmF0ZSJdLCJvdXRib3VuZFRhZyI6ImRpcmVjdCJ9LHsiX19uYW1lX18iOiJEaXJlY3QgZWxzZSIsImlkIjoiMTBGRDJEMEYtQTQ4Ny00OTE1LTlEM0EtNTlCMjI2MkU2QTJGIiwidHlwZSI6ImZpZWxkIiwicG9ydCI6IjAtNjU1MzUiLCJvdXRib3VuZFRhZyI6ImRpcmVjdCJ9XX0=
