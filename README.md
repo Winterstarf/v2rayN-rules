@@ -1,4 +1,4 @@
-# Preambule
+# Info
 These presets are made with the intention to proxy only those domains and CIDRs that are blocked in Russia, and direct domestic and non-restricted traffic to not hog up my server's bandwidth.\
 Even though I initially created this repo to only contain v2ray/xray .json-formatted presets, I also included presets for sing-box.
 
@@ -46,6 +46,10 @@ eyJkb21haW5TdHJhdGVneSI6IklQT25EZW1hbmQiLCJpZCI6Ijc0Q0Q0RUI5LTQ0NzUtNEZBMC04MzA1
 ```
 
 ---
+# Guides
+This section is completely optional, because it is generally easy to import and use routing presets. However, I did make some basic how-to's just in case someone would need them.
+
+Be wary that most apps already have means of downloading some basic routing presets made either by their authors or by the community, so you may or may not need my custom presets from this repo (why would you come here then, anyways?), so in case if you do want to apply custom rules, either mine or your own, continue with the guides below.
 
 ## v2rayN
 
