@@ -108,8 +108,6 @@ To use my specific profiles (overwriting the defaults if desired):
 
 Enable **Tun Mode** or **System Proxy**, preferably **Tun** if you plan on gaming and using Discord, and activate a profile by right clicking and selecting **Start**, and you're good to go.
 
----
-
 ## v2RayTun
 
 ### 1. Configure Geo-Asset source
@@ -132,7 +130,7 @@ Enable **Tun Mode** or **System Proxy**, preferably **Tun** if you plan on gamin
 
 ## Trivia & Advanced Usage for v2RayTun, v2rayNG and possibly other apps
 
-* **Custom service outing:** You can manually route specific domains or services by using the **Services** menu on the main screen. This is useful for forcing specific sites through the proxy regardless of global rules.
+* **Custom service outing:** You can manually route specific domains or services by using the **Services** menu on the main screen. This is useful for forcing specific sites through the proxy regardless of global rules (only in v2RayTun, Streisand, and some others).
 * **Custom app routing:** In the **Routing** menu, you can choose exactly which apps on your device use the proxy. 
-    * **Routing of selectyed applications:** If you choose this, remember to select your browser (Chrome, Firefox, etc.) and any other apps that need to bypass blocks.
-    * **Bypass Mode:** Useful if you want everything proxied except for local Russian apps (like banking or government services).
+    * **Routing of selectyed applications:** If you choose this, remember to select your browser and any other apps that need to be proxied.
+    * **Bypass Mode:** Useful if you want everything proxied except for local apps (like banking or govt services).
