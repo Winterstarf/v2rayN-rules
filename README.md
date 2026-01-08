@@ -64,7 +64,7 @@ First, you must download the specific .dat files for the region.
 2. Locate the **Geo files source** dropdown.
 3. Select the `runetfreedom/russia-v2ray-rules-dat` option.
 
-![Step 1: Geo Asset Configuration](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/geofiles_setting.png)
+![Step 1: Geo Asset Configuration](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/v2rayn_geofiles.png)
 
 ### 3. Import custom rules
 To use my specific profiles (overwriting the defaults if desired):
@@ -82,14 +82,14 @@ To use my specific profiles (overwriting the defaults if desired):
 > 2. Click **Import rules from subscription url** again.
 > 3. When prompted, you **must select Replace** to overwrite the old rules with the updated ones.
 
-![Step 2: Rule Import Process](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/importing_rules.png)
+![Step 2: Rule Import Process](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/v2rayn_routing.png)
 
 ### 4. Activate the Routing Profile
 1. On the main application window, look for the **Routing** dropdown menu at the bottom.
 2. Select the custom profile you just created/updated.
 3. Enable **Tun Mode** or **System Proxy** depending on your needs.
 
-![Step 3: Activating the Route](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/using_profiles.png)
+![Step 3: Activating the Route](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/v2rayn_modes.png)
 
 ## Throne
 
