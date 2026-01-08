@@ -126,8 +126,6 @@ Enable **Tun Mode** or **System Proxy**, preferably **Tun** if you plan on gamin
 
 <img src="https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/v2raytun_routing.png" width="350">
 
----
-
 ## Trivia & Advanced Usage for v2RayTun, v2rayNG and possibly other apps
 
 * **Custom service outing:** You can manually route specific domains or services by using the **Services** menu on the main screen. This is useful for forcing specific sites through the proxy regardless of global rules (only in v2RayTun, Streisand, and some others).
