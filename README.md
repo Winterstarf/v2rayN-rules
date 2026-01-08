@@ -5,7 +5,7 @@ Even though I initially created this repo to only contain v2ray/xray .json-forma
 I should also mention that the presets are made possible using geofiles from the [runetfreedom](https://github.com/runetfreedom/russia-v2ray-rules-dat) repo, which are maintained by the community.
 
 ## Client apps
-* **xray/v2ray** — [v2rayN](https://github.com/2dust/v2rayN) (Linux, Win, macOS), [v2rayNG](https://github.com/2dust/v2rayNG) (Android), v2RayTun (Android, iOS, Win (uses sing-box), Happ (*not recommended*)
+* **xray/v2ray** — [v2rayN](https://github.com/2dust/v2rayN) (Linux, Win, macOS), [v2rayNG](https://github.com/2dust/v2rayNG) (Android), [v2RayTun](https://github.com/DigneZzZ/v2raytun) (Android, iOS, Win (uses sing-box), [Happ](https://www.happ.su/main) (*not recommended*)
 * **sing-box** — [Throne](https://github.com/throneproj/Throne) (Linux, Win, macOS), [NekoBox](https://github.com/MatsuriDayo/NekoBoxForAndroid) (Android (Play Store version has been compromised))
 
 ## Presets
