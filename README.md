@@ -80,7 +80,7 @@ To use my specific profiles (overwriting the defaults if desired):
 > When you need to update the rules to the latest version:
 > 1. Open your existing routing profile in **Routing Setting**.
 > 2. Click **Import rules from subscription url** again.
-> 3. When prompted, you **must select Replace** to overwrite the old rules with the updated ones.
+> 3. When prompted, you **must select Replace** to overwrite old rules with the updated ones.
 
 ![Step 2: Rule Import Process](https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/v2rayn_routing.png)
 
