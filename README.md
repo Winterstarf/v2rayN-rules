@@ -98,7 +98,6 @@ To use my specific profiles (overwriting the defaults if desired):
 2. In the same **Routing** menu, after the preset is downloaded, select it.
 3. In **Settings** > **Tun Settings** enable **Tun Routing**.
 
-
 ### 2. Using custom presets
 1. In **Routing** > **Routing Settings** > **Route** click **New**.
 2. Set **Default outbound** to **Direct** if you've chosen "blocked_only", or to **Proxy** if other two profiles.
