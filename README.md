@@ -116,7 +116,7 @@ Enable **Tun Mode** or **System Proxy**, preferably **Tun** if you plan on gamin
 3. Locate **Geo files source** and select `runetfreedom/russia-v2ray-rules-dat` from the dropdown list.
 4. Tap the **Cloud icon** to start the download. Wait until the `.dat` files are fully updated.
 
-<img src="https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/v2raytun_geo.png" width="350">
+<img src="https://raw.githubusercontent.com/Winterstarf/v2ray-rules/refs/heads/main/images/v2raytun_geofiles.png" width="350">
 
 ### 2. Set domain strategy
 1. In the **Routing** menu, find the **Domain Strategy** setting and choose **IPOnDemand**.
